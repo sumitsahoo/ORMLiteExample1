@@ -36,7 +36,8 @@ public class OrmliteDatabaseConfigUtil extends OrmLiteConfigUtil {
 
         String currDirectory = "user.dir";
 
-        String configPath = "\\app\\src\\main\\res\\raw\\ormlite_config.txt";
+        // app directory is set as working directory in run config.
+        String configPath = "\\src\\main\\res\\raw\\ormlite_config.txt";
 
         /**
          * Gets the project root directory
@@ -48,8 +49,6 @@ public class OrmliteDatabaseConfigUtil extends OrmLiteConfigUtil {
          * of the ormlite_config.txt file appended to it
          */
         String fullConfigPath = projectRoot + configPath;
-
-        fullConfigPath = "C:\\FoS Test Field\\ORMLiteExample1\\app\\src\\main\\res\\raw\\ormlite_config.txt";
 
         File configFile = new File(fullConfigPath);
 
