@@ -117,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
         } catch (java.sql.SQLException e) {
             e.printStackTrace();
         }
+
+        count = 0;
         populateData(null);
     }
 
